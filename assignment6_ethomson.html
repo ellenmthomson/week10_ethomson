@@ -27,8 +27,8 @@
 	}
 	
 /* 	add test here */
-	a.test {
-    background-color: #98BCEB;
+	a.highlight {
+    background-color: yellow;
 }
 	
 	
@@ -245,19 +245,25 @@
     <script>
  
 $( document ).ready(function() {
- 
-	$( "a" ).addClass( "test" ); 
-});
+
 
 
 $( "#content h2" ).click(function( event ) {
- 
     event.preventDefault();
- 
-    $( this ).hide( "slow" );
- 
+    	$( this ).hide( "slow" );
+	});
+    
+    	$( "a" ).click(function() {
+  		$( this ).toggleClass( "highlight" );
 });
+    
+});    
     </script>
+    
+    
+    
+    
+    
 </body>
 </html>
 
